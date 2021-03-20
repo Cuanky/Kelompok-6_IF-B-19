@@ -1,10 +1,67 @@
 /* Navbar */
+.navbar
+{
+    position: relative;
+    z-index: 1;
+}
 
 .navbar-brand
 {
     font-family: Poppins;
     font-size: 32px;
 }
+
+
+/* Jumbotron */
+.jumbotron 
+{
+    background-image: url(img/wp4013117-apex-legends-hd-wallpapers.jpg);
+    background-size: cover;
+    height: 720px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.jumbotron .container
+{
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+}
+
+.jumbotron .display-4
+{
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 52px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span
+{
+    font-weight: 500;
+}
+
+
+/* Info Panel */
+.info-panel
+{
+    background-color: salmon;
+}
+
 
 /* Utility */
 .tombol {
@@ -14,9 +71,15 @@
 
 
 
-
-/* DESKTOP */
+/* DESKTOP VER. */
 @media (min-width: 992px) {
+
+    .navbar-brand, .nav-link 
+    {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
     .nav-link
     {
         text-transform: uppercase;
@@ -31,5 +94,16 @@
         margin:auto;
         padding-bottom: 5px;
         margin-bottom: -8px;
+    }
+
+    .jumbotron
+    {
+        margin-top: -75px;
+        height: 1080px;
+    }
+
+    .jumbotron .display-4
+    {
+        font-size: 62px;
     }
  }
