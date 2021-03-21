@@ -55,11 +55,51 @@
     font-weight: 500;
 }
 
+/* Section */
+    section
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    #home
+    {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #features, #gallery, #about
+    {
+        height: 700px;
+    }
+/* Akhir Section */
+
+
+/* Scropll Effect */
+html
+{
+    scroll-behavior: smooth;
+}
+/* Akhir Scroll Effect */
+
+
 
 /* Info Panel */
 .info-panel
 {
-    background-color: salmon;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-top: -70px;
+    background-color: white;
+    padding: 30px;
+}
+
+.info-panel img
+{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px; 
 }
 
 

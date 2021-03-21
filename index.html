@@ -19,63 +19,160 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Project RizFal</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="btn btn-primary tombol" href="#">Join Us</a>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Project RizFal</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="btn btn-primary " data-toggle="modal" data-target="#joinus">Join Us</a>
+              
+              <div class="modal fade" id="joinus" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Contact Person</h5>
+                      <button type="button" class="close" data-dissmiss="modal" aria-label="close"></button>
+                        <span aria-hidden="true">&times;</span>
+
+                    </div>
+                      <div class="modal-body">
+                        <form action="">
+                          <div class="from-group">
+                            <label for="">Nama Lengkap</label>
+                            <input type="text" name="" class="form-control">
+                          </div>
+                          <div class="from-group">
+                            <label for="">Email Anda</label>
+                            <input type="email" name="" class="form-control">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div> 
+        </div> 
     </nav>
     <!-- Akhir Navbar -->
+
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Mabar Bersama<br>
            <span>Cuanky</span> dan <span>Crypton</span></h1>
-           <a href=""class="btn btn-primary tombol">Our Work</a>
+           <a href=""class="btn btn-primary tombol">Livestream</a>
       </div>
     </div>
 
     <!-- Akhir Jumbotron -->
 
+    <!-- Carousel -->
+    <section id="home">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/wp4013161-apex-legends-hd-wallpapers.jpg" class="d-block w-100" alt="img/wp4013161-apex-legends-hd-wallpapers.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/wp4013153-apex-legends-hd-wallpapers.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/wp4013156-apex-legends-hd-wallpapers.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
 
+    <section id="features" class="bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Features</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut quos corrupti necessitatibus cupiditate perferendis quidem cum expedita quisquam, in fugit voluptate ea iste? 
+              Tempore, quas harum sapiente laboriosam quos quam vero ipsum, eveniet recusandae nisi minus! Sed aut laudantium temporibus ad incidunt deserunt vitae nam, eveniet, ducimus eligendi exercitationem.</p>
+            
+            <br/><br/>
+            <button type="button" class="btn btn-primary btn-lg">This is button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="gallery" class="bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Gallery</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint repellendus officia facere enim non vero minus voluptates dignissimos incidunt id dolorum blanditiis similique 
+              reiciendis corporis consequuntur, dolor numquam! Sequi, rerum tenetur doloremque aspernatur quis odio quod quas accusamus voluptatum? Alias itaque magni a nihil ea rem quae, et quibusdam ipsam..</p>
+            
+            <br/><br/>
+            <button type="button" class="btn btn-primary btn-lg">This is button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-warning">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque asperiores ad, facere atque molestias voluptates, ipsa qui mollitia sit perspiciatis culpa, ab quia nihil
+               sunt laborum quae aliquid suscipit magni in voluptatem odio unde alias! Nulla corrupti expedita laudantium at aliquid nemo ipsum deserunt ab blanditiis, unde sit perferendis illo.</p>
+            
+            <br/><br/>
+            <button type="button" class="btn btn-primary btn-lg">This is button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Carousel -->
 
 
     <!-- Container -->
     <div class="container">
 
-
       <!-- Info Panel -->
-      <div class="row justify-content-center info-panel">
-        <div class="col-lg-10">
+      <div class="row justify-content-center">
+        <div class="col-10 info-panel">
           <div class="row">
             <div class="col-lg">
-              <img src="https://www.clipartmax.com/png/small/284-2847989_discord-new-logo-icon-discord-icon.png" alt="Discord New Logo Icon - Discord Icon @clipartmax.com">
-              <img src="https://www.clipartmax.com/png/small/16-160592_youtube-clipart-square-social-media-icons-youtube.png" alt="Youtube Clipart Square - Social Media Icons Youtube @clipartmax.com">
-              
+              <img src="img/youtube__1616301377_18309.png" alt="youtube" class="float-left">
+              <h4>Youtube</h4>
+            </div>
+            <div class="col-lg">
+              <img src="img/discord__1616300813_71579.png" alt="discord" class="float-left">
+              <h4>Discord</h4>
+            </div>
+            <div class="col-lg">
+              <img src="img/twitch__1616300853_60623.png" alt="twitch" class="float-left">
+              <h4>Twitch</h4>
             </div>
           </div>
         </div>
       </div>
       <!-- Akhir Info Panel -->
-
-
-
-
-
-
-
 
     </div>
     <!-- Akhir Container -->
